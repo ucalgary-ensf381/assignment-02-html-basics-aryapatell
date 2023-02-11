@@ -1,35 +1,113 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <nav>
-        <a href="about.html">About</a>
-        <a href="skills.html">Skills</a>
-        <a href="education.html">Education</a>
-        <a href="experience.html">Experience</a>
-        <a href="interests.html">Interests</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-  <title>My Personal Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arya.patel</title>
   <style>
-    h1 {
-      text-align: center;
-      margin-top: 0;
+    * {
+      box-sizing: border-box;
     }
     
-    .highlight {
-      background-color: lightblue;
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: lightgray;
+      height: 60px;
+      padding: 0 20px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black;
+      margin-right: 20px;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px;
+    }
+    
+    .header img {
+      border-radius: 50%;
+      width: 220px;
+      height: 280px;
+      margin-right: 30px;
+    }
+    
+    .header h1 {
+      margin: 0;
+    }
+    
+    .header a {
+      margin-left: 10px;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    
+    .content h3 {
+      margin: 0;
+    }
+    
+    .skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skills li {
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 720px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .header img {
+        margin-bottom: 30px;
+      }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="experience.html">Experience</a>
+    <a href="interests.html">Interests</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <div class="header">
+    <img src="arya.jpeg" alt="Arya Patel">
+    <div>
+      <h1>Arya Patel</h1>
+      <a href="https://www.instagram.com/arya.patel">@arya.patel</a>
+    </div>
+  </div>
+<body>
 <div style = "text-align: center">
-    <img src="arya.jpeg" alt="Arya Patel" width = "220" height = "280" >
     <h1>Arya Patel</h1>
  </div>
   <div class="education">
-    <p>Masters in Computer Science, 2018-2022 <br>University of Calgary.</p>
-    <p>Bachelors in Computer Science,  014-2018 <br>University of Calgary.</p>
+    <p>Bachelors OF Science in Software Engineering,  2021-2025 <br>University of Calgary.</p>
   </div>
-  <p class="highlight"> Detailed credentials and certification available upon request</p>
+  <p class="highlight"> Detailed credentials and certification available upon request.</p>
 </body>
 </html>

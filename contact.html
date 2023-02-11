@@ -1,7 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Contact Information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arya.patel</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: lightgray;
+      height: 60px;
+      padding: 0 20px;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: black;
+      margin-right: 20px;
+    }
+    
+    .header {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 30px;
+    }
+    
+    .header img {
+      border-radius: 50%;
+      width: 220px;
+      height: 280px;
+      margin-right: 30px;
+    }
+    
+    .header h1 {
+      margin: 0;
+    }
+    
+    .header a {
+      margin-left: 10px;
+    }
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+    
+    .content h3 {
+      margin: 0;
+    }
+    
+    .skills {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .skills li {
+      margin-bottom: 10px;
+    }
+    
+    @media (max-width: 720px) {
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .header img {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
   <nav>
     <a href="about.html">About</a>
     <a href="skills.html">Skills</a>
@@ -10,32 +93,14 @@
     <a href="interests.html">Interests</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <style>
-    h1 {
-      text-align: center;
-      margin-top: 0;
-    }
-    .contact-info {
-      text-align: center;
-    }
-    .contact-links a {
-      color: blue;
-      text-decoration: none;
-      margin-right: 10px;
-    }
-    .instant-message {
-      border: 1px solid #ddd;
-      padding: 10px;
-      width: 50%;
-      margin: 0 auto;
-    }
-  </style>
-</head>
-<body>
-    <div style = "text-align: center">
-        <img src="arya.jpeg" alt="Arya Patel" width = "220" height = "280" >
-        <h1>Arya Patel</h1>
-      </div>
+  
+  <div class="header">
+    <img src="arya.jpeg" alt="Arya Patel">
+    <div>
+      <h1>Arya Patel</h1>
+      <a href="https://www.instagram.com/arya.patel">@arya.patel</a>
+    </div>
+  </div>
  
   <h1>Arya Patel</h1>ß
   <div class="contact-info">
